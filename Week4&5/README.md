@@ -230,7 +230,7 @@ if args.printDest == "" {
   selpg -s1 -e2 -l3 a.txt 
   ```
   
-  ![1](img/1.png)
+  ![1](img\1.png)
   
 - 缺省情况下的终端输入：
 
@@ -238,7 +238,7 @@ if args.printDest == "" {
   selpg -s1 -e1 -l3
   ```
 
-  ![2](img/2.png)
+  ![2](img\2.png)
 
 - 重定向标准输入：
 
@@ -246,7 +246,7 @@ if args.printDest == "" {
   selpg -s1 -e2 -l3 < a.txt 
   ```
 
-  ![3](img/3.png)
+  ![3](img\3.png)
 
 - 使标准输入来自另一个程序的标准输出：
 
@@ -254,7 +254,7 @@ if args.printDest == "" {
   cat a.txt | selpg -s1 -e2 -l4 
   ```
 
-  ![4](img/4.png)
+  ![4](img\4.png)
 
 ### 输出测试
 
@@ -267,7 +267,7 @@ if args.printDest == "" {
   selpg -s1 -e2 -l3 a.txt > b.txt
   ```
 
-  ![5](img/5.png)
+  ![5](img\5.png)
 
 - 使输出成为另一个程序的标准输入：
 
@@ -302,7 +302,7 @@ if args.printDest == "" {
   selpg -s1 -e2 -l3 a.txt | getInput
   ```
 
-  ![6](img/6.png)
+  ![6](img\6.png)
 
 ​		
 
@@ -314,7 +314,7 @@ if args.printDest == "" {
   selpg --s
   ```
 
-  ![7](img/7.png)
+  ![7](img\7.png)
 
 - 将错误重定向至文件
 
@@ -322,7 +322,7 @@ if args.printDest == "" {
   selpg --s > error.txt
   ```
 
-  ![8](img/8.png)
+  ![8](img\8.png)
 
 - 将标准输出和标准错误都重定向至不同的文件
 
@@ -330,7 +330,7 @@ if args.printDest == "" {
   selpg -s5 -e1 -l4 > b.txt > error.txt
   ```
 
-  ![9](img/9.png)
+  ![9](img\9.png)
 
 ### 其他参数测试
 
@@ -364,7 +364,7 @@ if args.printDest == "" {
   selpg -s2 -e3 -f a.txt
   ```
 
-  ![10](img/10.png)
+  ![10](img\10.png)
 
 - `-d`参数测试
 
@@ -374,4 +374,4 @@ if args.printDest == "" {
   selpg -s2 -e3 -l2 -d b.txt a.txt
   ```
 
-  ![11](img/11.png)
+  ![11](img\11.png)
