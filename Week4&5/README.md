@@ -230,7 +230,7 @@ if args.printDest == "" {
   selpg -s1 -e2 -l3 a.txt 
   ```
   
-  ![1](img\1.png)
+  ![1](img\1.PNG)
   
 - 缺省情况下的终端输入：
 
