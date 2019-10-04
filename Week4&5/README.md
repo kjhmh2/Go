@@ -238,7 +238,11 @@ if args.printDest == "" {
   selpg -s1 -e1 -l3
   ```
 
+<<<<<<< HEAD
   ![2](img/2.PNG)
+=======
+  ![2](img/2.png)
+>>>>>>> ec7866c8f81de87cbac43f8e8f59ac849abf9de1
 
 - 重定向标准输入：
 
@@ -374,4 +378,8 @@ if args.printDest == "" {
   selpg -s2 -e3 -l2 -d b.txt a.txt
   ```
 
+<<<<<<< HEAD
   ![11](img/11.PNG)
+=======
+  ![11](img\11.png)
+>>>>>>> ec7866c8f81de87cbac43f8e8f59ac849abf9de1
