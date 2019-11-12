@@ -1,0 +1,256 @@
+/*辅助线*/
+/*#position, #result {
+	border: 1px solid blue;
+}
+
+#picture {
+	border: 1px solid red;
+}*/
+
+/*.common {
+	border: 1px solid red;
+}*/
+
+/*#time {
+	border: 1px solid red;
+}*/
+
+/*整体布局*/
+body,html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family:"Century Gothic", Futura, Verdana, sans-serif;
+	background: url("image/background.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+/*标题*/
+h1 {
+	text-align: center;
+}
+
+/*展示游戏的状态*/
+#result {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*定位元素*/
+#position {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 470px;
+}
+
+/*游戏区域的样式*/
+#game_square {
+	left: 0;
+	top: 0;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+}
+
+/*时间提示*/
+#time {
+	position: absolute;
+	margin-left: 20px; 
+	margin-top: 410px;
+	width: 40px;
+}
+
+/*进度条*/
+#time_shown {
+	position: absolute;
+	margin-left: 70px;
+	margin-top: 415px;
+	width: 300px;
+	height: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+/*里面颜色条的样式*/
+#color {
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 300px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: rgb(80,217,55);
+}
+
+/*开始按钮的样式*/
+#start {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	margin-right: 225px;
+	margin-left: 75px;
+	outline: none;
+	color: black;
+    background-image: linear-gradient(#bdd3ed, #95cde8);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 8px;
+    box-shadow: 0 1px white inset;
+    text-shadow: 0 1px 1px #729abf;
+    font-weight: bold;
+}
+
+/*提示按钮的样式*/
+#hint {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	margin-right: 75px;
+	margin-left: 225px;
+	outline: none;
+	color: black;
+    background-image: linear-gradient(#bdd3ed, #95cde8);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 8px;
+    box-shadow: 0 1px white inset;
+    text-shadow: 0 1px 1px #729abf;
+    font-weight: bold;
+}
+
+/*点击之后的效果*/
+#start:active, #hint:active {
+	box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+    border-color: rgba(0,0,0,.3);
+    background: #97cdec;
+}
+
+/*提示数字的样式*/
+.number {
+	color: red;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+/*设置16块的位置*/
+.position1, .position2, .position3, .position4 {
+    top: 0px;
+}
+
+.position5, .position6, .position7, .position8 {
+    top: 100px;
+}
+
+.position9, .position10, .position11, .position12 {
+    top: 200px;
+}
+
+.position13, .position14, .position15, .position16 {
+    top: 300px;
+}
+
+.position1, .position5, .position9, .position13 {
+    left: 0px;
+}
+
+.position2, .position6, .position10, .position14 {
+    left: 100px;
+}
+
+.position3, .position7, .position11, .position15 {
+    left: 200px;
+}
+
+.position4, .position8, .position12, .position16 {
+    left: 300px;
+}
+
+.common {
+	background: url("image/panda.png") no-repeat;
+	display: inline-block;
+	width: 98px;
+	height: 98px;
+	position: absolute;
+	transition-duration: 0.2s;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.common:hover {
+	transform: scale(1.05);
+}
+
+/*每块的单独背景属性*/
+#part1 {
+	background-position: 0px 0px;
+}
+
+#part2 {
+	background-position: -100px 0px;
+}
+
+#part3 {
+	background-position: -200px 0px;
+}
+
+#part4 {
+	background-position: -300px 0px;
+}
+
+#part5 {
+	background-position: 0px -100px;
+}
+
+#part6 {
+	background-position: -100px -100px;
+}
+
+#part7 {
+	background-position: -200px -100px;
+}
+
+#part8 {
+	background-position: -300px -100px;
+}
+
+#part9 {
+	background-position: 0px -200px;
+}
+
+#part10 {
+	background-position: -100px -200px;
+}
+
+#part11 {
+	background-position: -200px -200px;
+}
+
+#part12 {
+	background-position: -300px -200px;
+}
+
+#part13 {
+	background-position: 0px -300px;
+}
+
+#part14 {
+	background-position: -100px -300px;
+}
+
+#part15 {
+	background-position: -200px -300px;
+}
+
+#part16 {
+	background-position: -300px -300px;
+	background-image: none;
+	opacity: 0;
+}
+
